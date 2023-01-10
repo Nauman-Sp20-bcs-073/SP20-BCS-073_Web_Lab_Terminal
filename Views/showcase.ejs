@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    
+</head>
+<body>
+    <%- include("./layout.ejs") %>
+    
+    <div style="margin:2%" >
+    <% for(var i=0; i<products.length; i++) { %>
+    <div style="padding:1%;">
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <%= products[i].name  %>  </h4>
+        <p style="font-style: italic;"> <%= products[i].description %> </p>
+    </div>
+
+    <% } %>
+
+</div>
+
+
+      
+      
+
+</body>
+</html>
